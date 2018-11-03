@@ -1,0 +1,21 @@
+/*We prevent the user to click on any news feed posts*/
+#stream_pagelet [id^='substream'] {
+    pointer-events: none !important;
+}
+/*We hide the above-the-fold content*/
+._3x-2, /*message picture*/
+[id^=topnews_main_stream] ._38vo, /*all user profile picture except yours*/
+[data-ad-preview='message'], /*text message*/
+.UFIContainer, /*comments*/
+._ipn, /*likes icons; likes, comments and shares counters*/
+._5vra, /*name*/
+._5pcp /* timestamps (or sponsored, paid partnership...) + icon (planete, friends...)*/
+ {
+    opacity: 0;
+}
+
+/*We never display invitations and pages news*/
+._4nef,
+._j_2 {
+    display: none !important;
+}
