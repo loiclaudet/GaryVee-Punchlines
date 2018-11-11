@@ -1,6 +1,6 @@
 {
     "name": "GaryVee Punchlines",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "manifest_version": 2,
     "description": "Replace your facebook news feed with GaryVee punchlines. 👊",
     "content_scripts": [

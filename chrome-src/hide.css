@@ -1,6 +1,6 @@
 /*We prevent the user to click on any news feed posts*/
 #stream_pagelet [id^='substream'] {
-    pointer-events: none !important;
+    pointer-events: none;
 }
 /*We hide the above-the-fold content*/
 ._3x-2, /*message picture*/
@@ -18,4 +18,24 @@
 ._4nef,
 ._j_2 {
     display: none !important;
+}
+/*We still want display groups infos*/
+#pagelet_group_ ._3x-2, /*message picture*/
+#pagelet_group_  [data-ad-preview='message'], /*text message*/
+#pagelet_group_  .UFIContainer, /*comments*/
+#pagelet_group_  ._ipn, /*likes icons; likes, comments and shares counters*/
+#pagelet_group_  ._5vra, /*name*/
+#pagelet_group_  ._5pcp /* timestamps (or sponsored, paid partnership...) + icon (planete, friends...)*/
+ {
+    opacity: 1;
+}
+/*We still want display profile page infos*/
+._2t4u ._3x-2, /*message picture*/
+._2t4u  [data-ad-preview='message'], /*text message*/
+._2t4u  .UFIContainer, /*comments*/
+._2t4u  ._ipn, /*likes icons; likes, comments and shares counters*/
+._2t4u  ._5vra, /*name*/
+._2t4u  ._5pcp /* timestamps (or sponsored, paid partnership...) + icon (planete, friends...)*/
+ {
+    opacity: 1;
 }
